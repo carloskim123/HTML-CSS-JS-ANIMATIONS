@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 2%;
+}
+fieldset:nth-child(1) {
+  padding: 20px;
+  max-height: 200px;
+  outline: none;
+  border: none;
+}
+
+.hidden-el {
+  line-height: 1.5;
+  border: solid 2px;
+  padding: 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  transform: scale(0.1) rotate(360deg);
+  max-width: 500px;
+  max-height: 500px;
+  overflow-y: scroll;
+  color: black;
+  background-color: aliceblue;
+  box-shadow: 10px 10px 90px 2px rgb(0, 0, 0);
+}
+
+button {
+  cursor: pointer;
+
+}
+.active {
+  opacity: 1;
+  transform: translateY(90px) rotate(-360deg);
+  transition-duration: 500ms;
+}
+
+.inactive {
+  opacity: 0;
+  transition-duration: 500ms;
+}
